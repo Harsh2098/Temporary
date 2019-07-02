@@ -4,45 +4,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="recyclerview.forces">
+
     <LinearLayout
+        android:id="@+id/size"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:orientation="horizontal"
-        android:id="@+id/size">
-    </LinearLayout>
+        android:orientation="horizontal"></LinearLayout>
+
     <LinearLayout
+        android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/heading"
         android:layout_below="@id/size"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="ID"
-            android:textSize="40sp"
-            android:textColor="@android:color/background_dark"
-            android:textStyle="bold"
+            android:layout_weight="1"
             android:padding="10dp"
-            android:layout_weight="1"/>
+            android:text="ID"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@android:color/background_dark"
-            android:textSize="40sp"
+            android:layout_weight="1"
             android:padding="10dp"
             android:text="NAME"
-            android:layout_weight="1"/>
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/forceslist"
         android:layout_width="match_parent"
-        android:layout_below="@id/heading"
-        android:layout_height="wrap_content"
-        android:id="@+id/forceslist">
+        android:layout_height="match_parent"
+        android:layout_below="@id/heading">
 
     </android.support.v7.widget.RecyclerView>
 

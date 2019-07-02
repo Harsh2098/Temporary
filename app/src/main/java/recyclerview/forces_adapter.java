@@ -37,6 +37,11 @@ public class forces_adapter extends RecyclerView.Adapter<forces_adapter.ForcesVi
 
     }
 
+    public void swapData(ArrayList<forces_cl> newList) {
+      forces_clArrayList = newList;
+      notifyDataSetChanged();
+    }
+
     @Override
     public int getItemCount() {
         return forces_clArrayList.size();

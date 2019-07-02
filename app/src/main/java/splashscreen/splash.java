@@ -9,7 +9,7 @@ import heisenber737.ukpolice.MainActivity;
 import heisenber737.ukpolice.R;
 
 public class splash extends AppCompatActivity {
-     int splashtime=2000;
+     int splashtime=200;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
